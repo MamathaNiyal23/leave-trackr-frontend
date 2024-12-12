@@ -1,0 +1,8 @@
+{
+  "short_name": "Leave Trackr",
+  "name": "Leave Tracker Application",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

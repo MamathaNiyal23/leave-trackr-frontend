@@ -5,12 +5,37 @@ import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const { register, handleSubmit } = useForm();
-
   const navigate = useNavigate();
 
-  const onSubmit = () => {
-    navigate("/dashboard");
+  const onSubmit = async (data: any) => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/user`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        const responseData = await response.json();
+        const { id, username, role } = responseData;
+
+        localStorage.setItem(
+          "user",
+          JSON.stringify({ userId: id, username, role })
+        );
+
+        navigate("/dashboard");
+      } else {
+        const errorData = await response.json();
+        alert(errorData.error || "Registration failed. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again later.");
+    }
   };
+
   return (
     <div className="container">
       <div className="right">

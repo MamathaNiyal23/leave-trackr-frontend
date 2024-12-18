@@ -4,9 +4,10 @@ on:
   push:
     branches:
       - main
+      - feature/homepage-authentication
 
 jobs:
-  build:
+  test:
     runs-on: macos-latest
     steps:
       - name: Checkout code
@@ -19,6 +20,8 @@ jobs:
         run: npm install 
       - name: Build the app
         run: npm run build
+      - name: Run tests
+        run: npm test
 
 
 

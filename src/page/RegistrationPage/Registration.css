@@ -1,0 +1,76 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content:flex-end;
+    background-color: white;
+  }
+  
+  .left img {
+    width: 80%;
+    max-height: 80%;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .right h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+ 
+  
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .role {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .role label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+
+  button {
+    padding: 0.75rem;
+    background-color: rgb(104, 104, 162);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  

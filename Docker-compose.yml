@@ -1,0 +1,14 @@
+services:
+    frontend:
+        image: react-app
+        container_name: react-app
+        build:
+            context: .  
+            dockerfile: Dockerfile    
+        ports:
+            - "3000:3000"
+        networks:
+            - leaveTracker          
+networks:
+    leaveTracker:
+        external: true

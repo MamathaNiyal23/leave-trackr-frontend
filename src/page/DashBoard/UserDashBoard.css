@@ -1,0 +1,97 @@
+.content{
+  border-radius: 20px;
+  width: 50%;
+}
+.header-icons {
+  display: flex;
+  flex-direction: row;
+
+
+
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: rgb(185, 185, 243);
+
+}
+.icons {
+  display: flex;
+  align-items: flex-end;
+  gap: 30px;
+
+}
+.content-body1{
+  background-color: lavender;
+  width: 50%;
+  height: 100%;
+  padding: 40px;
+  border-radius: 10px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.Image {
+  height: 40px;
+  width: 40px;
+
+}
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .form-div {
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+    margin-left: 20px;
+    padding: 60px;
+    align-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .apply-leave-form label {
+    margin-bottom: 10px;
+  } 
+   
+  .apply-leave-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+ .apply-leave-form button {
+    padding: 10px;
+    width: 50%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  } 
+  
+  
+ .status-pending {
+  background-color: rgb(210, 210, 60);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.status-approved {
+  background-color: green;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+.status-rejected {
+  background-color: red;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
